@@ -4,6 +4,7 @@
 *.zip
 .DS_Store
 .editorconfig
+.enable-dev-mode
 .eslintrc
 .git/
 _SYNCAPP/
