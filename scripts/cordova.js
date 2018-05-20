@@ -306,6 +306,13 @@ let updateCordovaConfig = function (callback) {
       }
     }
   ]
+  config['allow-navigation'] = [
+    {
+      $: {
+        href: 'https://*youtube.com/*'
+      }
+    }
+  ]
   // Update config files
   let builder = new xml.Builder({rootName: 'widget', xmldec: {version: '1.0', encoding: 'utf-8'}})
   let xmlContent = builder.buildObject(config)
